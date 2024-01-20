@@ -1,15 +1,20 @@
+/* Importing use of tailwind css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Importing Font Family */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 
+/* Root for constants in CSS */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --primarycolor: #23856d;
-  --secondarycolor: #23A6F0;
+  --secondarycolor: #23a6f0;
+  --success-text-color: #2dc071;
+  --text-color: #252B42;
 
   --font-mono: var(--font-inconsolata);
 }
@@ -18,6 +23,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* CSS for all nav components */
 
 .nav {
   /* position: fixed; */
@@ -94,31 +101,31 @@
   align-items: center;
 }
 
-.mini-nav-ul{
+.mini-nav-ul {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.a-tag{
+.a-tag {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
 
-.a-tag:hover{
+.a-tag:hover {
   color: #23856d;
   transition: 1s;
   font-size: 16px;
 }
 
-.login-register{
+.login-register {
   display: flex;
   gap: 5px;
   align-items: center;
 }
 
-.l-r{
+.l-r {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
@@ -126,7 +133,7 @@
   color: var(--secondarycolor);
 }
 
-.numb{
+.numb {
   font-family: "Montserrat";
   font-size: 12px;
   font-weight: 400;
@@ -134,34 +141,129 @@
   color: var(--secondarycolor);
 }
 
-.j-content{
+.j-content {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.r-nav{
+.r-nav {
   display: flex;
   gap: 30px;
   align-items: center;
 }
 
-.icons-right{
+.icons-right {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.cursor{
+.cursor {
   cursor: pointer;
 }
 
-.shop{
+.shop {
   display: flex;
   gap: 5px;
   align-items: center;
   padding-top: 2px;
 }
+/* -------------------------------------------- */
+
+/* CSS for furniture component */
+
+.furniture {
+  width: 100%;
+  padding-left: 147px;
+  padding-right: 147px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.left-f {
+  background-image: url("../app/images/png/cober-one.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 616px;
+  width: 451px;
+  padding: 24px;
+}
+
+.right-t{
+  background-image: url("../app/images/png/cover-top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 678px;
+  padding: 24px;
+}
+
+.r-one{
+  background-image: url("../app/images/png/cover-under-one.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 331px;
+  padding: 24px;
+}
+
+.r-two{
+  background-image: url("../app/images/png/cover-under-two.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 331px;
+  padding: 24px;
+}
+
+.right-bottom{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.items-f {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--success-text-color);
+}
+
+.fr-f {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+}
+
+.fr-ff {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+}
+
+.read-f{
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+}
+
+/* ---------------------------------------- */
 
 /* media */
 @media (prefers-color-scheme: dark) {
@@ -171,8 +273,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-
 
 /* body {
   color: rgb(var(--foreground-rgb));
