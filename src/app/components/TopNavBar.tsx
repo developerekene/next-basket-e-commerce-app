@@ -5,13 +5,12 @@ import InstaNav from "../images/png/instagram.png";
 import youTubeNav from "../images/png/youtube.png";
 import fBookNav from "../images/png/facebook.png";
 import twitterNav from "../images/png/twitter.png";
-import userNav from "../images/png/user.png";
 import emailNav from "../images/png/email.png";
 import phoneNav from "../images/png/phone.png";
 
 const TopNavBar: React.FunctionComponent = () => {
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-green nav">
+    <nav className="nav">
       <div className="inner-con flex">
         <div className="contact">
           <div className="e-inner">

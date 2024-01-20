@@ -2,20 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --primarycolor: #23856D;
+  --primarycolor: #23856d;
+  --secondarycolor: #23A6F0;
 
   --font-mono: var(--font-inconsolata);
 }
 
-.nav{
-  position: fixed;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  /* position: fixed; */
   background-color: var(--primarycolor);
   width: 100%;
   display: flex;
@@ -24,43 +29,138 @@
   align-items: center;
   color: #ffffff;
 }
+.nav-main {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 46px;
+  align-items: center;
+}
 
-.inner-con{
+.inner-con {
   display: flex;
   justify-content: space-between;
   width: 90%;
   align-items: center;
 }
 
-.contact{
+.contact {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
 
-.insta-img{
+.contact-m {
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+}
+
+.insta-img {
   height: 20px;
   width: 20px;
 }
-.e-inner{
+.e-inner {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   align-items: center;
 }
 
-.right-icons{
+.right-icons {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
-.phone-num{
-  font-family: 'Montserrat';
+.phone-num {
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.2px;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.mini-nav {
+  display: flex;
+  align-items: center;
+}
+
+.mini-nav-ul{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.a-tag{
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.a-tag:hover{
+  color: #23856d;
+  transition: 1s;
+  font-size: 16px;
+}
+
+.login-register{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.l-r{
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--secondarycolor);
+}
+
+.numb{
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: var(--secondarycolor);
+}
+
+.j-content{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.r-nav{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.icons-right{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.shop{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-top: 2px;
 }
 
 /* media */
