@@ -15,6 +15,7 @@
   --secondarycolor: #23a6f0;
   --success-text-color: #2dc071;
   --text-color: #252B42;
+  --second-text-color: #737373
 
   --font-mono: var(--font-inconsolata);
 }
@@ -175,8 +176,6 @@
 
 .furniture {
   width: 100%;
-  padding-left: 147px;
-  padding-right: 147px;
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
@@ -255,15 +254,70 @@
   color: var(--text-color);
 }
 
-.read-f{
+.align-p{
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
+  text-align: center;
+}
+.align-b{
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
+  text-align: center;
+}
+
+.align-text{
   font-family: "Montserrat";
   font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ---------------------------------------- */
+
+/* CSS for Featured Products component */
+.featured-p{
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.align-p{
+  font-family: "Montserrat";
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.2px;
   color: var(--text-color);
 }
 
-/* ---------------------------------------- */
+/* ----------------------------------- */
+
+/*  */
+.button-main{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.b-text{
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* ----------------------------------- */
 
 /* media */
 @media (prefers-color-scheme: dark) {

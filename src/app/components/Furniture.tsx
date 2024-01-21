@@ -1,11 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import coverLeft from "../images/png/cober-one.png";
-import coverTop from "../images/png/cover-top.png";
-import coverBLeft from "../images/png/cover-under-one.png";
-import coverBRight from "../images/png/cover-under-two.png";
 
 const Furniture: React.FunctionComponent = () => {
   // --> declearing use states
