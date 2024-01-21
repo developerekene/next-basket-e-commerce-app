@@ -14,8 +14,9 @@
   --primarycolor: #23856d;
   --secondarycolor: #23a6f0;
   --success-text-color: #2dc071;
-  --text-color: #252B42;
-  --second-text-color: #737373
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --disabled-element-color: #8ec2f2;
 
   --font-mono: var(--font-inconsolata);
 }
@@ -26,9 +27,7 @@
 }
 
 /* CSS for all nav components */
-
 .nav {
-  /* position: fixed; */
   background-color: var(--primarycolor);
   width: 100%;
   display: flex;
@@ -193,7 +192,7 @@
   padding: 24px;
 }
 
-.right-t{
+.right-t {
   background-image: url("../app/images/png/cover-top.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -203,7 +202,7 @@
   padding: 24px;
 }
 
-.r-one{
+.r-one {
   background-image: url("../app/images/png/cover-under-one.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -213,7 +212,7 @@
   padding: 24px;
 }
 
-.r-two{
+.r-two {
   background-image: url("../app/images/png/cover-under-two.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -223,7 +222,7 @@
   padding: 24px;
 }
 
-.right-bottom{
+.right-bottom {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -254,7 +253,7 @@
   color: var(--text-color);
 }
 
-.align-p{
+.align-p {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 400;
@@ -262,7 +261,7 @@
   color: var(--second-text-color);
   text-align: center;
 }
-.align-b{
+.align-b {
   font-family: "Montserrat";
   font-size: 24px;
   font-weight: 700;
@@ -271,7 +270,7 @@
   text-align: center;
 }
 
-.align-text{
+.align-text {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
@@ -284,7 +283,7 @@
 /* ---------------------------------------- */
 
 /* CSS for Featured Products component */
-.featured-p{
+.featured-p {
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -292,7 +291,7 @@
   justify-content: center;
 }
 
-.align-p{
+.align-p {
   font-family: "Montserrat";
   font-size: 24px;
   font-weight: 700;
@@ -303,14 +302,14 @@
 /* ----------------------------------- */
 
 /* CSS for Button component */
-.button-main{
+.button-main {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.b-text{
+.b-text {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
@@ -319,9 +318,8 @@
 
 /* ----------------------------------- */
 
-
 /* CSS for Best Services component */
-.b-services{
+.b-services {
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -329,14 +327,14 @@
   justify-content: center;
 }
 
-.content-b{
+.content-b {
   margin-top: 80px;
   display: flex;
   gap: 43px;
   justify-content: center;
 }
 
-.header-i{
+.header-i {
   font-family: "Montserrat";
   font-size: 24px;
   font-weight: 700;
@@ -346,7 +344,7 @@
   padding-bottom: 20px;
 }
 
-.desc-i{
+.desc-i {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
@@ -355,17 +353,156 @@
   color: var(--second-text-color);
 }
 
-.icon-card-main{
+.icon-card-main {
   width: 30%;
 }
 
-.icon-inner{
+.icon-inner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* ----------------------------------- */
+
+/*  */
+
+.f-post {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.f-posts {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--secondarycolor);
+  text-align: center;
+  padding-top: 112px;
+}
+
+.f-titles {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.g-btn {
+  color: var(--disabled-element-color);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.t-btn {
+  color: var(--second-text-color);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.n-btn {
+  color: var(--second-text-color);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.items-map {
+  display: flex;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.f-home {
+  box-shadow: 0px 2px 2px 0px;
+  width: 348px;
+}
+
+.content-f-inner {
+  padding: 25px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.content-desc {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.date-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.diplay-f{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.header-f{
+  color: var(--text-color);
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  padding-right: 100px;
+  margin-bottom: 10px;
+}
+.text-fa{
+  color: var(--text-color);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.desc-f{
+  color: var(--second-text-color);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+}
+
+.base-f{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.learn-more{
+  color: var(--text-color);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/*  */
 
 /* media */
 @media (prefers-color-scheme: dark) {

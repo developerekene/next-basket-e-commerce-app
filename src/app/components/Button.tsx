@@ -7,9 +7,9 @@ type Props = React.DetailedHTMLProps<
   HTMLButtonElement
 > & {
   bgColor: string;
-  bWidth: number;
-  bColor: string;
-  bRadius: number;
+  bWidth?: number;
+  bColor?: string;
+  bRadius?: number;
   textColor: string;
   onClick: () => void;
 };

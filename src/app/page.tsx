@@ -1,4 +1,5 @@
 import BestServices from "./components/BestServices";
+import FeaturedPost from "./components/FeaturedPost";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Furniture from "./components/Furniture";
 import NavBar from "./components/NavBar";
@@ -11,7 +12,8 @@ export default function Home() {
       <NavBar />
       <Furniture />
       <FeaturedProducts />
-      <BestServices/>
+      <BestServices />
+      <FeaturedPost />
     </>
   );
 }
