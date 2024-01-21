@@ -302,7 +302,7 @@
 
 /* ----------------------------------- */
 
-/*  */
+/* CSS for Button component */
 .button-main{
   padding-left: 40px;
   padding-right: 40px;
@@ -315,6 +315,54 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.2px;
+}
+
+/* ----------------------------------- */
+
+
+/* CSS for Best Services component */
+.b-services{
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-b{
+  margin-top: 80px;
+  display: flex;
+  gap: 43px;
+  justify-content: center;
+}
+
+.header-i{
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.desc-i{
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: var(--second-text-color);
+}
+
+.icon-card-main{
+  width: 30%;
+}
+
+.icon-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------------------------- */
